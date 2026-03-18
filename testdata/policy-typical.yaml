@@ -1,0 +1,45 @@
+version: 1
+
+network:
+  allow:
+    - api.anthropic.com
+    - api.openai.com
+    - api.github.com
+  deny:
+    - "169.254.*"
+    - "10.*"
+  ask:
+    default: ask
+
+filesystem:
+  allow_read:
+    - /home/agent/workspace
+    - /tmp
+  allow_write:
+    - /home/agent/workspace
+    - /tmp
+  deny:
+    - "**/.ssh"
+    - "**/.aws"
+    - /etc/shadow
+  ask:
+    - /home/agent/documents
+
+process:
+  allow:
+    - node
+    - python3
+    - bash
+    - curl
+  deny:
+    - sudo
+    - su
+    - apt
+  ask:
+    - git
+    - docker
+
+resources:
+  max_memory: 4GB
+  max_cpu_percent: 80
+  max_disk_write: 10GB

@@ -1,0 +1,41 @@
+# Build output
+bin/
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Kage runtime
+.kage/
+*.sock
+daemon.lock
+
+# Frontend (when added)
+web/node_modules/
+web/dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Coverage
+coverage.out
+coverage.html
