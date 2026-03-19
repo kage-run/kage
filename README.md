@@ -18,6 +18,16 @@ kage stop coder
 
 ## Quick Start
 
+### Download a release
+
+Download the latest binary from [GitHub Releases](https://github.com/kage-run/kage/releases).
+
+On macOS, remove the quarantine attribute after downloading:
+
+```bash
+xattr -d com.apple.quarantine ./kage
+```
+
 ### Build from source
 
 ```bash
