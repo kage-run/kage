@@ -107,7 +107,7 @@ The tradeoff: Kage's kernel enforcement is Linux-specific. The daemon and proces
 
 ## Requirements
 
-- **Go 1.24+** for building from source.
+- **Go 1.26+** for building from source.
 - **macOS or Linux.** The daemon and process supervision work on both. Kernel-level enforcement (Landlock, seccomp) is planned for Linux.
 
 ## License
